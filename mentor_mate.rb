@@ -6,9 +6,9 @@ n = gets.chomp
 
 exit if n == 'x'
 
-m = validation(n.to_i)
+m = Validations.new.validate(n.to_i)
 
-draw(m)
+Draw.new.draw(m)
 
 # n = 3
 # ---***---***------***---***---
