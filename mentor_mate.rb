@@ -1,4 +1,4 @@
-require_relative 'lib/validation'
+require_relative 'lib/validations'
 require_relative 'lib/draw'
 
 n = ''
