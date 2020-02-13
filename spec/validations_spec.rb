@@ -1,4 +1,4 @@
-require '~/mentormate/lib/validation'
+require '~/mentormate/lib/validations'
 
 RSpec.describe Validations do
 	describe '#validate' do
