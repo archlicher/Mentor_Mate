@@ -1,14 +1,21 @@
 require_relative 'lib/validation'
 require_relative 'lib/draw'
 
-puts 'Please enter a value for N or "x", if you want to exit:'
-n = gets.chomp
+n = ''
+validation = Validations.new
 
-exit if n == 'x'
+until false
+	puts 'Please enter a value for N or "x", if you want to exit:'
+	n = gets.chomp
 
-m = Validations.new.validate(n.to_i)
+	exit if n == 'x'
 
-Draw.new.draw(m)
+	n = n.to_i
+
+	break if validation.validate(n)
+end
+
+Draw.new.draw(n)
 
 # n = 3
 # ---***---***------***---***---

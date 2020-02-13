@@ -12,12 +12,12 @@ RSpec.describe Validations do
 		end
 
 		context 'when an invalid value' do
-			it { expect(v.validate(0)).to eq('Your input did not meet the criteria. Please try again.') }
-			it { expect(v.validate(1)).to eq('Your input did not meet the criteria. Please try again.') }
-			it { expect(v.validate(2)).to eq('Your input did not meet the criteria. Please try again.') }
-			it { expect(v.validate(4)).to eq('Your input did not meet the criteria. Please try again.') }
-			it { expect(v.validate(9998)).to eq('Your input did not meet the criteria. Please try again.') }
-			it { expect(v.validate(10_001)).to eq('Your input did not meet the criteria. Please try again.') }
+			it { expect(v.validate(0)).to be_nil }
+			it { expect(v.validate(1)).to be_nil }
+			it { expect(v.validate(2)).to be_nil }
+			it { expect(v.validate(4)).to be_nil }
+			it { expect(v.validate(9998)).to be_nil }
+			it { expect(v.validate(10_001)).to be_nil }
 		end
 	end
 end

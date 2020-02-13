@@ -52,6 +52,11 @@ Just type in the console:
 ruby mentor_mate.rb
 ```
 
+Or you can run the tests:
+```
+rspec spec/.
+```
+
 ### Dependencies
 
 It requires RSpec
