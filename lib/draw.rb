@@ -6,8 +6,7 @@ class Draw
 
 	def top_mm_logo(n)
 		a, b, c, d = n, n, n, n * 2
-		i = 0
-		while i <= n/2
+		until c < 0
 			print('-' * a)
 			print('*' * b)
 			print('-' * c)
@@ -19,11 +18,8 @@ class Draw
 			puts('-' * a)
 			a -= 1
 			b += 2
-			b = n * 2 - 1 if b == n * 2 + 1
 			c -= 2
-			c = 1 if c < 0
 			d -= 2
-			i += 1
 		end
 	end
 
@@ -32,8 +28,7 @@ class Draw
 		b = n * 2 - 1
 		c = 1
 		d = n - 1
-		i = n/2
-		while i <= n
+		until c > n
 			print('-' * a)
 			print('*' * n)
 			print('-' * c)
@@ -51,8 +46,6 @@ class Draw
 			b -= 2
 			c += 2
 			d -= 2
-			i += 1
-			break if n < c
 		end
 	end
 end
