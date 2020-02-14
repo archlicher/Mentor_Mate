@@ -47,12 +47,19 @@ N = 7
 ```
 ## How to run it?
 
-Just type in the console:
+1. Clone the repository on your computer:
+```
+git clone https://github.com/archlicher/Mentor_Mate.git
+```
+2. Enter the cloned directory:
+```
+cd Mentor_Mate
+```
+3. And just type in the console:
 ```
 ruby mentor_mate.rb
 ```
-
-Or you can run the tests:
+4. Or you can run the tests:
 ```
 rspec spec/.
 ```
